@@ -1,0 +1,525 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>InfluxDB基本概念 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="subject02.html" />
+    
+    
+    <link rel="prev" href="../Chapter02.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    InfluxDB简介
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.1" data-path="../Chapter01/subject01.html">
+            
+                <a href="../Chapter01/subject01.html">
+            
+                    
+                    InfluxDB安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2" data-path="../Chapter01/subject02.html">
+            
+                <a href="../Chapter01/subject02.html">
+            
+                    
+                    InfluxDB启动
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.3" data-path="../Chapter01/subject03.html">
+            
+                <a href="../Chapter01/subject03.html">
+            
+                    
+                    安装后web页面无法访问的解决方案
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../Chapter02.html">
+            
+                <a href="../Chapter02.html">
+            
+                    
+                    InfluxDB概念
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.2.1" data-path="subject01.html">
+            
+                <a href="subject01.html">
+            
+                    
+                    InfluxDB基本概念
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="subject02.html">
+            
+                <a href="subject02.html">
+            
+                    
+                    InfluxDB关键概念
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="subject03.html">
+            
+                <a href="subject03.html">
+            
+                    
+                    InfluxDB原理详解
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../Chapter03.html">
+            
+                <a href="../Chapter03.html">
+            
+                    
+                    InfluxDB操作
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../Chapter03/subject01.html">
+            
+                <a href="../Chapter03/subject01.html">
+            
+                    
+                    基本操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../Chapter03/subject05.html">
+            
+                <a href="../Chapter03/subject05.html">
+            
+                    
+                    数据保留策略
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../Chapter03/subject02.html">
+            
+                <a href="../Chapter03/subject02.html">
+            
+                    
+                    连续查询
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../Chapter03/subject03.html">
+            
+                <a href="../Chapter03/subject03.html">
+            
+                    
+                    HTTP API写入操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../Chapter03/subject04.html">
+            
+                <a href="../Chapter03/subject04.html">
+            
+                    
+                    HTTP API查询操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../Chapter04.html">
+            
+                <a href="../Chapter04.html">
+            
+                    
+                    InfluxDB常用函数
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../Chapter04/subject01.html">
+            
+                <a href="../Chapter04/subject01.html">
+            
+                    
+                    聚合类函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../Chapter04/subject02.html">
+            
+                <a href="../Chapter04/subject02.html">
+            
+                    
+                    选择类函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../Chapter04/subject03.html">
+            
+                <a href="../Chapter04/subject03.html">
+            
+                    
+                    变换类函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../Chapter05.html">
+            
+                <a href="../Chapter05.html">
+            
+                    
+                    InfluxDB数据管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >InfluxDB基本概念</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="influxdb&#x57FA;&#x672C;&#x6982;&#x5FF5;">InfluxDB&#x57FA;&#x672C;&#x6982;&#x5FF5;</h1>
+<h2 id="&#x4E0E;&#x4F20;&#x7EDF;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x7684;&#x540D;&#x8BCD;&#x505A;&#x6BD4;&#x8F83;">&#x4E0E;&#x4F20;&#x7EDF;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x7684;&#x540D;&#x8BCD;&#x505A;&#x6BD4;&#x8F83;</h2>
+<table>
+<thead>
+<tr>
+<th>influxDB&#x4E2D;&#x7684;&#x540D;&#x8BCD;</th>
+<th>&#x4F20;&#x7EDF;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x7684;&#x6982;&#x5FF5;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>database</td>
+<td>&#x6570;&#x636E;&#x5E93;</td>
+</tr>
+<tr>
+<td>measurement</td>
+<td>&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x7684;&#x8868;</td>
+</tr>
+<tr>
+<td>points</td>
+<td>&#x8868;&#x91CC;&#x9762;&#x7684;&#x4E00;&#x884C;&#x6570;&#x636E;</td>
+</tr>
+</tbody>
+</table>
+<h2 id="influxdb&#x4E2D;&#x72EC;&#x6709;&#x7684;&#x6982;&#x5FF5;">InfluxDB&#x4E2D;&#x72EC;&#x6709;&#x7684;&#x6982;&#x5FF5;</h2>
+<ol>
+<li>tag--&#x6807;&#x7B7E;&#xFF1A;&#x5728;InfluxDB&#x4E2D;&#xFF0C;tag&#x662F;&#x4E00;&#x4E2A;&#x975E;&#x5E38;&#x91CD;&#x8981;&#x7684;&#x90E8;&#x5206;&#xFF0C;&#x8868;&#x540D;+tag&#x4E00;&#x8D77;&#x4F5C;&#x4E3A;&#x6570;&#x636E;&#x5E93;&#x7684;&#x7D22;&#x5F15;&#xFF0C;&#x662F;&#x201C;key-value&#x201D;&#x7684;&#x5F62;&#x5F0F;&#x3002;</li>
+<li>field--&#x6570;&#x636E;&#xFF1A;field&#x4E3B;&#x8981;&#x662F;&#x7528;&#x6765;&#x5B58;&#x653E;&#x6570;&#x636E;&#x7684;&#x90E8;&#x5206;&#xFF0C;&#x4E5F;&#x662F;&#x201C;key-value&#x201D;&#x7684;&#x5F62;&#x5F0F;&#x3002;</li>
+<li>timestamp--&#x65F6;&#x95F4;&#x6233;&#xFF1A;&#x4F5C;&#x4E3A;&#x65F6;&#x5E8F;&#x578B;&#x6570;&#x636E;&#x5E93;&#xFF0C;&#x65F6;&#x95F4;&#x6233;&#x662F;InfluxDB&#x4E2D;&#x6700;&#x91CD;&#x8981;&#x7684;&#x90E8;&#x5206;&#xFF0C;&#x5728;&#x63D2;&#x5165;&#x6570;&#x636E;&#x65F6;&#x53EF;&#x4EE5;&#x81EA;&#x5DF1;&#x6307;&#x5B9A;&#x4E5F;&#x53EF;&#x7559;&#x7A7A;&#x8BA9;&#x7CFB;&#x7EDF;&#x6307;&#x5B9A;&#x3002;
+&#x8BF4;&#x660E;&#xFF1A;&#x5728;&#x63D2;&#x5165;&#x65B0;&#x6570;&#x636E;&#x65F6;&#xFF0C;tag&#x3001;field&#x548C;timestamp&#x4E4B;&#x95F4;&#x7528;&#x7A7A;&#x683C;&#x5206;&#x9694;&#x3002;</li>
+<li>series--&#x5E8F;&#x5217;&#xFF1A;&#x6240;&#x6709;&#x5728;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x7684;&#x6570;&#x636E;&#xFF0C;&#x90FD;&#x9700;&#x8981;&#x901A;&#x8FC7;&#x56FE;&#x8868;&#x6765;&#x5C55;&#x793A;&#xFF0C;&#x800C;&#x8FD9;&#x4E2A;series&#x8868;&#x793A;&#x8FD9;&#x4E2A;&#x8868;&#x91CC;&#x9762;&#x7684;&#x6570;&#x636E;&#xFF0C;&#x53EF;&#x4EE5;&#x5728;&#x56FE;&#x8868;&#x4E0A;&#x753B;&#x6210;&#x51E0;&#x6761;&#x7EBF;&#x3002;</li>
+<li>Retention policy--&#x6570;&#x636E;&#x4FDD;&#x7559;&#x7B56;&#x7565;&#xFF1A;&#x53EF;&#x4EE5;&#x5B9A;&#x4E49;&#x6570;&#x636E;&#x4FDD;&#x7559;&#x7684;&#x65F6;&#x957F;&#xFF0C;&#x6BCF;&#x4E2A;&#x6570;&#x636E;&#x5E93;&#x53EF;&#x4EE5;&#x6709;&#x591A;&#x4E2A;&#x6570;&#x636E;&#x4FDD;&#x7559;&#x7B56;&#x7565;&#xFF0C;&#x4F46;&#x53EA;&#x80FD;&#x6709;&#x4E00;&#x4E2A;&#x9ED8;&#x8BA4;&#x7B56;&#x7565;&#x3002;</li>
+<li>Point--&#x70B9;&#xFF1A;&#x8868;&#x793A;&#x6BCF;&#x4E2A;&#x8868;&#x91CC;&#x67D0;&#x4E2A;&#x65F6;&#x523B;&#x7684;&#x67D0;&#x4E2A;&#x6761;&#x4EF6;&#x4E0B;&#x7684;&#x4E00;&#x4E2A;field&#x7684;&#x6570;&#x636E;&#xFF0C;&#x56E0;&#x4E3A;&#x4F53;&#x73B0;&#x5728;&#x56FE;&#x8868;&#x4E0A;&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x70B9;&#xFF0C;&#x4E8E;&#x662F;&#x5C06;&#x5176;&#x79F0;&#x4E3A;point&#x3002;</li>
+</ol>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../Chapter02.html" class="navigation navigation-prev " aria-label="Previous page: InfluxDB概念">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="subject02.html" class="navigation navigation-next " aria-label="Next page: InfluxDB关键概念">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"InfluxDB基本概念","level":"1.2.1","depth":2,"next":{"title":"InfluxDB关键概念","level":"1.2.2","depth":2,"path":"Chapter02/subject02.md","ref":"Chapter02/subject02.md","articles":[]},"previous":{"title":"InfluxDB概念","level":"1.2","depth":1,"path":"Chapter02.md","ref":"Chapter02.md","articles":[{"title":"InfluxDB基本概念","level":"1.2.1","depth":2,"path":"Chapter02/subject01.md","ref":"Chapter02/subject01.md","articles":[]},{"title":"InfluxDB关键概念","level":"1.2.2","depth":2,"path":"Chapter02/subject02.md","ref":"Chapter02/subject02.md","articles":[]},{"title":"InfluxDB原理详解","level":"1.2.3","depth":2,"path":"Chapter02/subject03.md","ref":"Chapter02/subject03.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Chapter02/subject01.md","mtime":"2019-12-12T06:34:52.819Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-12-12T08:39:37.831Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

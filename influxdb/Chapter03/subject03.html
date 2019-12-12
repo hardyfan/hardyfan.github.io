@@ -1,0 +1,529 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>HTTP API写入操作 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="subject04.html" />
+    
+    
+    <link rel="prev" href="subject02.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    InfluxDB简介
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.1" data-path="../Chapter01/subject01.html">
+            
+                <a href="../Chapter01/subject01.html">
+            
+                    
+                    InfluxDB安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2" data-path="../Chapter01/subject02.html">
+            
+                <a href="../Chapter01/subject02.html">
+            
+                    
+                    InfluxDB启动
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.3" data-path="../Chapter01/subject03.html">
+            
+                <a href="../Chapter01/subject03.html">
+            
+                    
+                    安装后web页面无法访问的解决方案
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../Chapter02.html">
+            
+                <a href="../Chapter02.html">
+            
+                    
+                    InfluxDB概念
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../Chapter02/subject01.html">
+            
+                <a href="../Chapter02/subject01.html">
+            
+                    
+                    InfluxDB基本概念
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../Chapter02/subject02.html">
+            
+                <a href="../Chapter02/subject02.html">
+            
+                    
+                    InfluxDB关键概念
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../Chapter02/subject03.html">
+            
+                <a href="../Chapter02/subject03.html">
+            
+                    
+                    InfluxDB原理详解
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../Chapter03.html">
+            
+                <a href="../Chapter03.html">
+            
+                    
+                    InfluxDB操作
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="subject01.html">
+            
+                <a href="subject01.html">
+            
+                    
+                    基本操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="subject05.html">
+            
+                <a href="subject05.html">
+            
+                    
+                    数据保留策略
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="subject02.html">
+            
+                <a href="subject02.html">
+            
+                    
+                    连续查询
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.4" data-path="subject03.html">
+            
+                <a href="subject03.html">
+            
+                    
+                    HTTP API写入操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="subject04.html">
+            
+                <a href="subject04.html">
+            
+                    
+                    HTTP API查询操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../Chapter04.html">
+            
+                <a href="../Chapter04.html">
+            
+                    
+                    InfluxDB常用函数
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../Chapter04/subject01.html">
+            
+                <a href="../Chapter04/subject01.html">
+            
+                    
+                    聚合类函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../Chapter04/subject02.html">
+            
+                <a href="../Chapter04/subject02.html">
+            
+                    
+                    选择类函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../Chapter04/subject03.html">
+            
+                <a href="../Chapter04/subject03.html">
+            
+                    
+                    变换类函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../Chapter05.html">
+            
+                <a href="../Chapter05.html">
+            
+                    
+                    InfluxDB数据管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >HTTP API写入操作</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="http-api&#x5199;&#x5165;&#x64CD;&#x4F5C;">HTTP API&#x5199;&#x5165;&#x64CD;&#x4F5C;</h1>
+<h2 id="&#x8BF4;&#x660E;">&#x8BF4;&#x660E;</h2>
+<p>&#x4E3A;&#x4E86;&#x65B9;&#x4FBF;&#xFF0C;&#x672C;&#x6587;&#x4E3B;&#x8981;&#x4F7F;&#x7528;curl&#x6765;&#x53D1;&#x8D77;http&#x8BF7;&#x6C42;&#xFF0C;&#x793A;&#x4F8B;&#x5F53;&#x4E2D;&#x4E5F;&#x662F;&#x4F7F;&#x7528;curl&#x8FD9;&#x4E2A;&#x5DE5;&#x5177;&#x6765;&#x6A21;&#x62DF;HTTP &#x8BF7;&#x6C42;&#x3002;</p>
+<p>&#x5728;&#x5B9E;&#x9645;&#x4F7F;&#x7528;&#x4E2D;&#xFF0C;&#x53EF;&#x4EE5;&#x5C06;&#x8BF7;&#x6C42;&#x5199;&#x5165;&#x4EE3;&#x7801;&#x4E2D;&#xFF0C;&#x901A;&#x8FC7;&#x5176;&#x4ED6;&#x7F16;&#x7A0B;&#x8BED;&#x8A00;&#x6765;&#x6A21;&#x62DF;HTTP&#x8BF7;&#x6C42;&#x3002;</p>
+<h2 id="influxdb&#x901A;&#x8FC7;http-api&#x64CD;&#x4F5C;&#x6570;&#x636E;&#x5E93;">InfluxDB&#x901A;&#x8FC7;HTTP API&#x64CD;&#x4F5C;&#x6570;&#x636E;&#x5E93;</h2>
+<ol>
+<li><p>&#x5EFA;&#x7ACB;&#x6570;&#x636E;&#x5E93;</p>
+<pre><code> curl -POST http://localhost:8086/query --data-urlencode &quot;q=CREATE DATABASE mydb&quot;
+</code></pre><p> &#x6267;&#x884C;&#x8FD9;&#x4E2A;&#x8BED;&#x53E5;&#x540E;&#xFF0C;&#x4F1A;&#x5728;&#x672C;&#x5730;&#x5EFA;&#x7ACB;&#x4E00;&#x4E2A;&#x540D;&#x4E3A;mydb&#x7684;&#x6570;&#x636E;&#x5E93;&#x3002;</p>
+</li>
+<li><p>&#x5220;&#x9664;&#x6570;&#x636E;&#x5E93;</p>
+<pre><code> curl -POST http://localhost:8086/query --data-urlencode &quot;q=DROP DATABASE mydb&quot;
+</code></pre><p> &#x5176;&#x5B9E;&#x4F7F;&#x7528;HTTP API&#x5C31;&#x662F;&#x5411; InfluxDB &#x63A5;&#x53E3;&#x53D1;&#x9001;&#x76F8;&#x5E94;&#x7684;POST&#x8BF7;&#x6C42;&#x3002;</p>
+<p> &#x5C06;&#x8BED;&#x53E5;&#x901A;&#x8FC7;POST&#x65B9;&#x5F0F;&#x53D1;&#x9001;&#x5230;&#x670D;&#x52A1;&#x5668;&#x3002;</p>
+</li>
+</ol>
+<h2 id="influxdb&#x901A;&#x8FC7;http-api&#x6DFB;&#x52A0;&#x6570;&#x636E;">InfluxDB&#x901A;&#x8FC7;HTTP API&#x6DFB;&#x52A0;&#x6570;&#x636E;</h2>
+<p>InfluxDB&#x901A;&#x8FC7;HTTP API&#x6DFB;&#x52A0;&#x6570;&#x636E;&#x4E3B;&#x8981;&#x4F7F;&#x7528;&#x5982;&#x4E0B;&#x683C;&#x5F0F;&#xFF1A;</p>
+<pre><code>curl -i -XPOST &apos;http://localhost:8086/write?db=mydb&apos; --data-binary &apos;cpu_load_short,host=server01,region=us-west value=0.64 1434055562000000000&apos;
+</code></pre><p>&#x8BF4;&#x660E;&#xFF1A;db=mydb&#x662F;&#x6307;&#x4F7F;&#x7528;mydb&#x8FD9;&#x4E2A;&#x6570;&#x636E;&#x5E93;&#x3002;</p>
+<p>--data-binary&#x540E;&#x9762;&#x662F;&#x9700;&#x63D2;&#x5165;&#x6570;&#x636E;&#x3002;</p>
+<p>cpu_load_short&#x662F;&#x8868;&#x540D;&#xFF08;measurement&#xFF09;&#xFF0C;tag&#x5B57;&#x6BB5;&#x662F;host&#x548C;region&#xFF0C;&#x503C;&#x5206;&#x522B;&#x4E3A;&#xFF1A;server01&#x548C;us-west&#x3002;</p>
+<p>field key&#x5B57;&#x6BB5;&#x662F;value&#xFF0C;&#x503C;&#x4E3A;0.64&#x3002;</p>
+<p>&#x65F6;&#x95F4;&#x6233;&#xFF08;timestamp&#xFF09;&#x6307;&#x5B9A;&#x4E3A;1434055562000000000&#x3002;</p>
+<p>&#x8FD9;&#x6837;&#xFF0C;&#x5C31;&#x5411;mydb&#x6570;&#x636E;&#x5E93;&#x7684;cpu_load_short&#x8868;&#x4E2D;&#x63D2;&#x5165;&#x4E86;&#x4E00;&#x6761;&#x6570;&#x636E;&#x3002;</p>
+<p>&#x5176;&#x4E2D;&#xFF0C;db&#x53C2;&#x6570;&#x5FC5;&#x987B;&#x6307;&#x5B9A;&#x4E00;&#x4E2A;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x5DF2;&#x7ECF;&#x5B58;&#x5728;&#x7684;&#x6570;&#x636E;&#x5E93;&#x540D;&#xFF0C;&#x6570;&#x636E;&#x4F53;&#x7684;&#x683C;&#x5F0F;&#x9075;&#x4ECE;InfluxDB&#x89C4;&#x5B9A;&#x683C;&#x5F0F;&#xFF0C;&#x9996;&#x5148;&#x662F;&#x8868;&#x540D;&#xFF0C;&#x540E;&#x9762;&#x662F;tags&#xFF0C;&#x7136;&#x540E;&#x662F;field&#xFF0C;&#x6700;&#x540E;&#x662F;&#x65F6;&#x95F4;&#x6233;&#x3002;tags&#x3001;field&#x548C;&#x65F6;&#x95F4;&#x6233;&#x4E09;&#x8005;&#x4E4B;&#x95F4;&#x4EE5;&#x7A7A;&#x683C;&#x76F8;&#x5206;&#x9694;&#x3002;</p>
+<h2 id="influxdb&#x901A;&#x8FC7;http-api&#x6DFB;&#x52A0;&#x591A;&#x6761;&#x6570;&#x636E;">InfluxDB&#x901A;&#x8FC7;HTTP API&#x6DFB;&#x52A0;&#x591A;&#x6761;&#x6570;&#x636E;</h2>
+<p>InfluxDB&#x901A;&#x8FC7;HTTP API&#x6DFB;&#x52A0;&#x591A;&#x6761;&#x6570;&#x636E;&#x4E0E;&#x6DFB;&#x52A0;&#x5355;&#x6761;&#x6570;&#x636E;&#x76F8;&#x4F3C;&#xFF0C;&#x793A;&#x4F8B;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code>curl -i -XPOST &apos;http://localhost:8086/write?db=mydb&apos; --data-binary &apos;cpu_load_short,host=server02 value=0.67
+cpu_load_short,host=server02,region=us-west value=0.55 1422568543702900257
+cpu_load_short,direction=in,host=server01,region=us-west value=2.0 1422568543702900257&apos;
+</code></pre><p>&#x8FD9;&#x6761;&#x8BED;&#x53E5;&#x5411;&#x6570;&#x636E;&#x5E93;mydb&#x7684;&#x8868;cpu_load_short&#x4E2D;&#x63D2;&#x5165;&#x4E86;&#x4E09;&#x6761;&#x6570;&#x636E;&#x3002;</p>
+<p>&#x7B2C;&#x4E00;&#x6761;&#x6307;&#x5B9A;tag&#x4E3A;host&#xFF0C;&#x503C;&#x4E3A;server02&#xFF0C;&#x7B2C;&#x4E8C;&#x6761;&#x6307;&#x5B9A;tag&#x4E3A;host&#x548C;region&#xFF0C;&#x503C;&#x5206;&#x522B;&#x4E3A;server02&#x548C;us-west&#xFF0C;&#x7B2C;&#x4E09;&#x6761;&#x6307;&#x5B9A;tag&#x4E3A;direction&#xFF0C;host&#xFF0C;region&#xFF0C;&#x503C;&#x5206;&#x522B;&#x4E3A;&#xFF1A;in&#xFF0C;server01&#xFF0C;us-west&#x3002;</p>
+<h2 id="influxdb-&#x7684;http-api&#x54CD;&#x5E94;">InfluxDB &#x7684;HTTP API&#x54CD;&#x5E94;</h2>
+<p>&#x5728;&#x4F7F;&#x7528;HTTP API&#x65F6;&#xFF0C;InfluxDB&#x7684;&#x54CD;&#x5E94;&#x4E3B;&#x8981;&#x6709;&#x4EE5;&#x4E0B;&#x51E0;&#x4E2A;&#xFF1A;</p>
+<p>1&#xFF09;2xx&#xFF1A;204&#x4EE3;&#x8868;no content&#xFF0C;200&#x4EE3;&#x8868;InfluxDB&#x53EF;&#x4EE5;&#x63A5;&#x6536;&#x8BF7;&#x6C42;&#x4F46;&#x662F;&#x6CA1;&#x6709;&#x5B8C;&#x6210;&#x8BF7;&#x6C42;&#x3002;&#x4E00;&#x822C;&#x4F1A;&#x5728;body&#x4F53;&#x4E2D;&#x5E26;&#x6709;&#x51FA;&#x9519;&#x4FE1;&#x606F;&#x3002;</p>
+<p>2&#xFF09;4xx&#xFF1A;InfluxDB&#x4E0D;&#x80FD;&#x89E3;&#x6790;&#x8BF7;&#x6C42;&#x3002;</p>
+<p>3&#xFF09;5xx&#xFF1A;&#x7CFB;&#x7EDF;&#x51FA;&#x73B0;&#x9519;&#x8BEF;&#x3002;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="subject02.html" class="navigation navigation-prev " aria-label="Previous page: 连续查询">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="subject04.html" class="navigation navigation-next " aria-label="Next page: HTTP API查询操作">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"HTTP API写入操作","level":"1.3.4","depth":2,"next":{"title":"HTTP API查询操作","level":"1.3.5","depth":2,"path":"Chapter03/subject04.md","ref":"Chapter03/subject04.md","articles":[]},"previous":{"title":"连续查询","level":"1.3.3","depth":2,"path":"Chapter03/subject02.md","ref":"Chapter03/subject02.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Chapter03/subject03.md","mtime":"2019-12-12T07:22:50.624Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-12-12T08:39:37.831Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

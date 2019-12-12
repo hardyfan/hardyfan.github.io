@@ -1,0 +1,688 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>变换类函数 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../Chapter05.html" />
+    
+    
+    <link rel="prev" href="subject02.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    InfluxDB简介
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.1" data-path="../Chapter01/subject01.html">
+            
+                <a href="../Chapter01/subject01.html">
+            
+                    
+                    InfluxDB安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2" data-path="../Chapter01/subject02.html">
+            
+                <a href="../Chapter01/subject02.html">
+            
+                    
+                    InfluxDB启动
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.3" data-path="../Chapter01/subject03.html">
+            
+                <a href="../Chapter01/subject03.html">
+            
+                    
+                    安装后web页面无法访问的解决方案
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../Chapter02.html">
+            
+                <a href="../Chapter02.html">
+            
+                    
+                    InfluxDB概念
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../Chapter02/subject01.html">
+            
+                <a href="../Chapter02/subject01.html">
+            
+                    
+                    InfluxDB基本概念
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../Chapter02/subject02.html">
+            
+                <a href="../Chapter02/subject02.html">
+            
+                    
+                    InfluxDB关键概念
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../Chapter02/subject03.html">
+            
+                <a href="../Chapter02/subject03.html">
+            
+                    
+                    InfluxDB原理详解
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../Chapter03.html">
+            
+                <a href="../Chapter03.html">
+            
+                    
+                    InfluxDB操作
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../Chapter03/subject01.html">
+            
+                <a href="../Chapter03/subject01.html">
+            
+                    
+                    基本操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../Chapter03/subject05.html">
+            
+                <a href="../Chapter03/subject05.html">
+            
+                    
+                    数据保留策略
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../Chapter03/subject02.html">
+            
+                <a href="../Chapter03/subject02.html">
+            
+                    
+                    连续查询
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../Chapter03/subject03.html">
+            
+                <a href="../Chapter03/subject03.html">
+            
+                    
+                    HTTP API写入操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../Chapter03/subject04.html">
+            
+                <a href="../Chapter03/subject04.html">
+            
+                    
+                    HTTP API查询操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../Chapter04.html">
+            
+                <a href="../Chapter04.html">
+            
+                    
+                    InfluxDB常用函数
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="subject01.html">
+            
+                <a href="subject01.html">
+            
+                    
+                    聚合类函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="subject02.html">
+            
+                <a href="subject02.html">
+            
+                    
+                    选择类函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4.3" data-path="subject03.html">
+            
+                <a href="subject03.html">
+            
+                    
+                    变换类函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../Chapter05.html">
+            
+                <a href="../Chapter05.html">
+            
+                    
+                    InfluxDB数据管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >变换类函数</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x53D8;&#x6362;&#x7C7B;&#x51FD;&#x6570;">&#x53D8;&#x6362;&#x7C7B;&#x51FD;&#x6570;</h1>
+<h2 id="derivative&#x51FD;&#x6570;">DERIVATIVE()&#x51FD;&#x6570;</h2>
+<p>&#x4F5C;&#x7528;&#xFF1A;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x5B57;&#x6BB5;&#x5728;&#x4E00;&#x4E2A;series&#x4E2D;&#x7684;&#x53D8;&#x5316;&#x7387;&#x3002;</p>
+<p>InfluxDB&#x4F1A;&#x8BA1;&#x7B97;&#x6309;&#x7167;&#x65F6;&#x95F4;&#x8FDB;&#x884C;&#x6392;&#x5E8F;&#x7684;&#x5B57;&#x6BB5;&#x503C;&#x4E4B;&#x95F4;&#x7684;&#x5DEE;&#x5F02;&#xFF0C;&#x5E76;&#x5C06;&#x8FD9;&#x4E9B;&#x7ED3;&#x679C;&#x8F6C;&#x5316;&#x4E3A;&#x5355;&#x4F4D;&#x53D8;&#x5316;&#x7387;&#x3002;&#x5176;&#x4E2D;&#xFF0C;&#x5355;&#x4F4D;&#x53EF;&#x4EE5;&#x6307;&#x5B9A;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;1s&#x3002;</p>
+<p>&#x8BED;&#x6CD5;&#xFF1A;</p>
+<pre><code>SELECT DERIVATIVE(&lt;field_key&gt;, [&lt;unit&gt;]) FROM &lt;measurement_name&gt; [WHERE &lt;stuff&gt;]
+</code></pre><p>&#x5176;&#x4E2D;&#xFF0C;unit&#x53D6;&#x503C;&#x53EF;&#x4EE5;&#x4E3A;&#x4EE5;&#x4E0B;&#x51E0;&#x79CD;&#xFF1A;</p>
+<p>u --microseconds
+s --seconds
+m --minutes
+h --hours
+d --days
+w --weeks
+DERIVATIVE()&#x51FD;&#x6570;&#x8FD8;&#x53EF;&#x4EE5;&#x5728;GROUP BY time()&#x7684;&#x6761;&#x4EF6;&#x4E0B;&#x4E0E;&#x805A;&#x5408;&#x51FD;&#x6570;&#x5D4C;&#x5957;&#x4F7F;&#x7528;&#xFF0C;&#x683C;&#x5F0F;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code>SELECT DERIVATIVE(AGGREGATION_FUNCTION(&lt;field_key&gt;),[&lt;unit&gt;]) FROM &lt;measurement_name&gt; WHERE &lt;stuff&gt; GROUP BY time(&lt;aggregation_interval&gt;)
+</code></pre><p>&#x793A;&#x4F8B;&#xFF1A;</p>
+<p>&#x5047;&#x8BBE;location = santa_monica &#x6761;&#x4EF6;&#x4E0B;&#x6570;&#x636E;&#x6709;&#x4EE5;&#x4E0B;&#x51E0;&#x6761;&#xFF1A;</p>
+<pre><code>name: h2o_feet
+--------------
+time                           water_level
+2015-08-18T00:00:00Z     2.064
+2015-08-18T00:06:00Z     2.116
+2015-08-18T00:12:00Z     2.028
+2015-08-18T00:18:00Z     2.126
+2015-08-18T00:24:00Z     2.041
+2015-08-18T00:30:00Z     2.051
+</code></pre><p>&#x8BA1;&#x7B97;&#x6BCF;&#x4E00;&#x79D2;&#x7684;&#x53D8;&#x5316;&#x7387;&#xFF1A;</p>
+<pre><code>&gt; SELECT DERIVATIVE(water_level) FROM h2o_feet WHERE location = &apos;santa_monica&apos; LIMIT 5
+name: h2o_feet
+--------------
+time                           derivative
+2015-08-18T00:06:00Z     0.00014444444444444457
+2015-08-18T00:12:00Z     -0.00024444444444444465
+2015-08-18T00:18:00Z     0.0002722222222222218
+2015-08-18T00:24:00Z     -0.000236111111111111
+2015-08-18T00:30:00Z     2.777777777777842e-05
+</code></pre><p>&#x7B2C;&#x4E00;&#x884C;&#x6570;&#x636E;&#x7684;&#x8BA1;&#x7B97;&#x516C;&#x5F0F;&#x4E3A;(2.116 - 2.064) / (360s / 1s)</p>
+<p>&#x8BA1;&#x7B97;&#x6BCF;&#x516D;&#x5206;&#x949F;&#x7684;&#x53D8;&#x5316;&#x7387;</p>
+<pre><code>&gt; SELECT DERIVATIVE(water_level,6m) FROM h2o_feet WHERE location = &apos;santa_monica&apos; LIMIT 5
+name: h2o_feet
+--------------
+time                           derivative
+2015-08-18T00:06:00Z     0.052000000000000046
+2015-08-18T00:12:00Z     -0.08800000000000008
+2015-08-18T00:18:00Z     0.09799999999999986
+2015-08-18T00:24:00Z     -0.08499999999999996
+2015-08-18T00:30:00Z     0.010000000000000231
+</code></pre><p>&#x7B2C;&#x4E00;&#x884C;&#x6570;&#x636E;&#x7684;&#x8BA1;&#x7B97;&#x8FC7;&#x7A0B;&#x5982;&#x4E0B;&#xFF1A;(2.116 - 2.064) / (6m / 6m)</p>
+<p>&#x8BA1;&#x7B97;&#x6BCF;12&#x5206;&#x949F;&#x7684;&#x53D8;&#x5316;&#x7387;&#xFF1A;</p>
+<pre><code>&gt; SELECT DERIVATIVE(water_level,12m) FROM h2o_feet WHERE location = &apos;santa_monica&apos; LIMIT 5
+name: h2o_feet
+--------------
+time                           derivative
+2015-08-18T00:06:00Z     0.10400000000000009
+2015-08-18T00:12:00Z     -0.17600000000000016
+2015-08-18T00:18:00Z     0.19599999999999973
+2015-08-18T00:24:00Z     -0.16999999999999993
+2015-08-18T00:30:00Z     0.020000000000000462
+</code></pre><p>&#x7B2C;&#x4E00;&#x884C;&#x6570;&#x636E;&#x8BA1;&#x7B97;&#x8FC7;&#x7A0B;&#x4E3A;&#xFF1A;(2.116 - 2.064 / (6m / 12m)</p>
+<p>&#x8BA1;&#x7B97;&#x6BCF;12&#x5206;&#x949F;&#x6700;&#x5927;&#x503C;&#x7684;&#x53D8;&#x5316;&#x7387;</p>
+<pre><code>&gt; SELECT DERIVATIVE(MAX(water_level)) FROM h2o_feet WHERE location = &apos;santa_monica&apos; AND time &gt;= &apos;2015-08-18T00:00:00Z&apos; AND time &lt; &apos;2015-08-18T00:36:00Z&apos; GROUP BY time(12m)
+name: h2o_feet
+--------------
+time                           derivative
+2015-08-18T00:12:00Z     0.009999999999999787
+2015-08-18T00:24:00Z     -0.07499999999999973
+</code></pre><p>&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x529F;&#x80FD;&#x975E;&#x5E38;&#x591A;&#xFF0C;&#x4E5F;&#x975E;&#x5E38;&#x590D;&#x6742;&#xFF0C;&#x66F4;&#x591A;&#x5BF9;&#x4E8E;&#x6B64;&#x529F;&#x80FD;&#x7684;&#x8BE6;&#x7EC6;&#x89E3;&#x91CA;&#x8BF7;&#x770B;&#x5B98;&#x7F51;&#xFF1A;<a href="https://docs.influxdata.com/influxdb/v0.13/query_language/functions/#derivative" target="_blank">https://docs.influxdata.com/influxdb/v0.13/query_language/functions/#derivative</a></p>
+<h2 id="difference&#x51FD;&#x6570;">DIFFERENCE()&#x51FD;&#x6570;</h2>
+<p>&#x4F5C;&#x7528;&#xFF1A;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x5B57;&#x6BB5;&#x4E2D;&#x8FDE;&#x7EED;&#x7684;&#x65F6;&#x95F4;&#x503C;&#x4E4B;&#x95F4;&#x7684;&#x5DEE;&#x5F02;&#x3002;&#x5B57;&#x6BB5;&#x7C7B;&#x578B;&#x5FC5;&#x987B;&#x662F;&#x957F;&#x6574;&#x578B;&#x6216;float64&#x3002;</p>
+<p>&#x6700;&#x57FA;&#x672C;&#x7684;&#x8BED;&#x6CD5;&#xFF1A;</p>
+<pre><code>SELECT DIFFERENCE(&lt;field_key&gt;) FROM &lt;measurement_name&gt; [WHERE &lt;stuff&gt;]
+</code></pre><p>&#x4E0E;GROUP BY time()&#x4EE5;&#x53CA;&#x5176;&#x4ED6;&#x5D4C;&#x5957;&#x51FD;&#x6570;&#x4E00;&#x8D77;&#x4F7F;&#x7528;&#x7684;&#x8BED;&#x6CD5;&#x683C;&#x5F0F;&#xFF1A;</p>
+<pre><code>SELECT DIFFERENCE(&lt;function&gt;(&lt;field_key&gt;)) FROM &lt;measurement_name&gt; WHERE &lt;stuff&gt; GROUP BY time(&lt;time_interval&gt;)
+</code></pre><p>&#x5176;&#x4E2D;&#xFF0C;&#x51FD;&#x6570;&#x53EF;&#x4EE5;&#x5305;&#x542B;&#x4EE5;&#x4E0B;&#x51E0;&#x4E2A;&#xFF1A;</p>
+<p>COUNT(), MEAN(), MEDIAN(),SUM(), FIRST(), LAST(), MIN(), MAX(), &#x548C; PERCENTILE()&#x3002;</p>
+<p>&#x4F7F;&#x7528;&#x793A;&#x4F8B;</p>
+<p>&#x4F8B;&#x5B50;&#x4E2D;&#x4F7F;&#x7528;&#x7684;&#x6E90;&#x6570;&#x636E;&#x5982;&#x4E0B;&#x6240;&#x793A;&#xFF1A;</p>
+<pre><code>&gt; SELECT water_level FROM h2o_feet WHERE location=&apos;santa_monica&apos; AND time &gt;= &apos;2015-08-18T00:00:00Z&apos; and time &lt;= &apos;2015-08-18T00:36:00Z&apos;
+name: h2o_feet
+--------------
+time                            water_level
+2015-08-18T00:00:00Z      2.064
+2015-08-18T00:06:00Z      2.116
+2015-08-18T00:12:00Z      2.028
+2015-08-18T00:18:00Z      2.126
+2015-08-18T00:24:00Z      2.041
+2015-08-18T00:30:00Z      2.051
+2015-08-18T00:36:00Z      2.067
+</code></pre><p>&#x8BA1;&#x7B97;water_level&#x95F4;&#x7684;&#x5DEE;&#x5F02;&#xFF1A;</p>
+<pre><code>&gt; SELECT DIFFERENCE(water_level) FROM h2o_feet WHERE location=&apos;santa_monica&apos; AND time &gt;= &apos;2015-08-18T00:00:00Z&apos; and time &lt;= &apos;2015-08-18T00:36:00Z&apos;
+name: h2o_feet
+--------------
+time                            difference
+2015-08-18T00:06:00Z      0.052000000000000046
+2015-08-18T00:12:00Z      -0.08800000000000008
+2015-08-18T00:18:00Z      0.09799999999999986
+2015-08-18T00:24:00Z      -0.08499999999999996
+2015-08-18T00:30:00Z      0.010000000000000231
+2015-08-18T00:36:00Z      0.016000000000000014
+</code></pre><p>&#x6570;&#x636E;&#x7C7B;&#x578B;&#x90FD;&#x4E3A;float&#x7C7B;&#x578B;&#x3002;</p>
+<h2 id="elapsed&#x51FD;&#x6570;">ELAPSED()&#x51FD;&#x6570;</h2>
+<p>&#x4F5C;&#x7528;&#xFF1A;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x5B57;&#x6BB5;&#x5728;&#x8FDE;&#x7EED;&#x7684;&#x65F6;&#x95F4;&#x95F4;&#x9694;&#x95F4;&#x7684;&#x5DEE;&#x5F02;&#xFF0C;&#x95F4;&#x9694;&#x5355;&#x4F4D;&#x53EF;&#x9009;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;1&#x7EB3;&#x79D2;&#x3002;</p>
+<p>&#x5355;&#x4F4D;&#x53EF;&#x9009;&#x9879;&#x5982;&#x4E0B;&#x56FE;&#xFF1A;</p>
+<p>image</p>
+<p>&#x8BED;&#x6CD5;&#xFF1A;</p>
+<pre><code>SELECT ELAPSED(&lt;field_key&gt;, &lt;unit&gt;) FROM &lt;measurement_name&gt; [WHERE &lt;stuff&gt;]
+</code></pre><p>&#x793A;&#x4F8B;&#xFF1A;</p>
+<p>&#x8BA1;&#x7B97;h2o_feet&#x5B57;&#x6BB5;&#x5728;&#x7EB3;&#x79D2;&#x95F4;&#x9694;&#x4E0B;&#x7684;&#x5DEE;&#x5F02;&#x3002;</p>
+<pre><code>&gt; SELECT ELAPSED(water_level) FROM h2o_feet WHERE location = &apos;santa_monica&apos; AND time &gt;= &apos;2015-08-18T00:00:00Z&apos; and time &lt;= &apos;2015-08-18T00:24:00Z&apos;
+name: h2o_feet
+--------------
+time                            elapsed
+2015-08-18T00:06:00Z      360000000000
+2015-08-18T00:12:00Z      360000000000
+2015-08-18T00:18:00Z      360000000000
+2015-08-18T00:24:00Z      360000000000
+</code></pre><p>&#x5728;&#x4E00;&#x5206;&#x949F;&#x95F4;&#x9694;&#x4E0B;&#x7684;&#x5DEE;&#x5F02;&#x7387;&#xFF1A;</p>
+<pre><code>&gt; SELECT ELAPSED(water_level,1m) FROM h2o_feet WHERE location = &apos;santa_monica&apos; AND time &gt;= &apos;2015-08-18T00:00:00Z&apos; and time &lt;= &apos;2015-08-18T00:24:00Z&apos;
+name: h2o_feet
+--------------
+time                            elapsed
+2015-08-18T00:06:00Z      6
+2015-08-18T00:12:00Z      6
+2015-08-18T00:18:00Z      6
+2015-08-18T00:24:00Z      6
+</code></pre><p>&#x6CE8;&#x610F;&#xFF1A;&#x5982;&#x679C;&#x8BBE;&#x7F6E;&#x7684;&#x65F6;&#x95F4;&#x95F4;&#x9694;&#x6BD4;&#x5B57;&#x6BB5;&#x6570;&#x636E;&#x95F4;&#x7684;&#x65F6;&#x95F4;&#x95F4;&#x9694;&#x66F4;&#x5927;&#x65F6;&#xFF0C;&#x5219;&#x51FD;&#x6570;&#x4F1A;&#x8FD4;&#x56DE;0&#xFF0C;&#x5982;&#x4E0B;&#x6240;&#x793A;&#xFF1A;</p>
+<pre><code>&gt; SELECT ELAPSED(water_level,1h) FROM h2o_feet WHERE location = &apos;santa_monica&apos; AND time &gt;= &apos;2015-08-18T00:00:00Z&apos; and time &lt;= &apos;2015-08-18T00:24:00Z&apos;
+name: h2o_feet
+--------------
+time                            elapsed
+2015-08-18T00:06:00Z      0
+2015-08-18T00:12:00Z      0
+2015-08-18T00:18:00Z      0
+2015-08-18T00:24:00Z      0
+</code></pre><h2 id="movingaverage&#x51FD;&#x6570;">MOVING_AVERAGE()&#x51FD;&#x6570;</h2>
+<p>&#x4F5C;&#x7528;&#xFF1A;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x8FDE;&#x7EED;&#x5B57;&#x6BB5;&#x503C;&#x7684;&#x79FB;&#x52A8;&#x5E73;&#x5747;&#x503C;&#xFF0C;&#x5B57;&#x6BB5;&#x7C7B;&#x578B;&#x5FC5;&#x987B;&#x662F;&#x957F;&#x6574;&#x5F62;&#x6216;&#x8005;float64&#x7C7B;&#x578B;&#x3002;</p>
+<p>&#x8BED;&#x6CD5;&#xFF1A;</p>
+<p>&#x57FA;&#x672C;&#x8BED;&#x6CD5;</p>
+<pre><code>SELECT MOVING_AVERAGE(&lt;field_key&gt;,&lt;window&gt;) FROM &lt;measurement_name&gt; [WHERE &lt;stuff&gt;]
+</code></pre><p>&#x4E0E;&#x5176;&#x4ED6;&#x51FD;&#x6570;&#x548C;GROUP BY time()&#x8BED;&#x53E5;&#x4E00;&#x8D77;&#x4F7F;&#x7528;&#x65F6;&#x7684;&#x8BED;&#x6CD5;</p>
+<pre><code>SELECT MOVING_AVERAGE(&lt;function&gt;(&lt;field_key&gt;),&lt;window&gt;) FROM &lt;measurement_name&gt; WHERE &lt;stuff&gt; GROUP BY time(&lt;time_interval&gt;)
+</code></pre><p>&#x6B64;&#x51FD;&#x6570;&#x53EF;&#x4EE5;&#x548C;&#x4EE5;&#x4E0B;&#x51FD;&#x6570;&#x4E00;&#x8D77;&#x4F7F;&#x7528;&#xFF1A;</p>
+<p>COUNT(), MEAN(),MEDIAN(), SUM(), FIRST(), LAST(), MIN(), MAX(), and PERCENTILE().</p>
+<p>&#x793A;&#x4F8B;&#xFF1A;</p>
+<pre><code>&gt; SELECT water_level FROM h2o_feet WHERE location = &apos;santa_monica&apos; AND time &gt;= &apos;2015-08-18T00:00:00Z&apos; and time &lt;= &apos;2015-08-18T00:36:00Z&apos;
+name: h2o_feet
+--------------
+time                            water_level
+2015-08-18T00:00:00Z      2.064
+2015-08-18T00:06:00Z      2.116
+2015-08-18T00:12:00Z      2.028
+2015-08-18T00:18:00Z      2.126
+2015-08-18T00:24:00Z      2.041
+2015-08-18T00:30:00Z      2.051
+2015-08-18T00:36:00Z      2.067
+</code></pre><h2 id="nonnegativederivative&#x51FD;&#x6570;">NON_NEGATIVE_DERIVATIVE()&#x51FD;&#x6570;</h2>
+<p>&#x4F5C;&#x7528;&#xFF1A;&#x8FD4;&#x56DE;&#x5728;&#x4E00;&#x4E2A;series&#x4E2D;&#x7684;&#x4E00;&#x4E2A;&#x5B57;&#x6BB5;&#x4E2D;&#x503C;&#x7684;&#x53D8;&#x5316;&#x7684;&#x975E;&#x8D1F;&#x901F;&#x7387;&#x3002;</p>
+<p>&#x8BED;&#x6CD5;&#xFF1A;</p>
+<pre><code>SELECT NON_NEGATIVE_DERIVATIVE(&lt;field_key&gt;, [&lt;unit&gt;]) FROM &lt;measurement_name&gt; [WHERE &lt;stuff&gt;]
+</code></pre><p>&#x5176;&#x4E2D;unit&#x53D6;&#x503C;&#x53EF;&#x4EE5;&#x4E3A;&#x4EE5;&#x4E0B;&#x51E0;&#x4E2A;&#xFF1A;</p>
+<p>image</p>
+<p>&#x4E0E;&#x805A;&#x5408;&#x7C7B;&#x51FD;&#x6570;&#x653E;&#x5728;&#x4E00;&#x8D77;&#x4F7F;&#x7528;&#x65F6;&#x7684;&#x8BED;&#x6CD5;&#x5982;&#x4E0B;&#x6240;&#x793A;&#xFF1A;</p>
+<pre><code>SELECT NON_NEGATIVE_DERIVATIVE(AGGREGATION_FUNCTION(&lt;field_key&gt;),[&lt;unit&gt;]) FROM &lt;measurement_name&gt; WHERE &lt;stuff&gt; GROUP BY time(&lt;aggregation_interval&gt;)
+</code></pre><p>&#x6B64;&#x51FD;&#x6570;&#x793A;&#x4F8B;&#x8BF7;&#x53C2;&#x9605;&#xFF1A;DERIVATIVE()&#x51FD;&#x6570;</p>
+<h2 id="stddev&#x51FD;&#x6570;">STDDEV()&#x51FD;&#x6570;</h2>
+<p>&#x4F5C;&#x7528;&#xFF1A;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x5B57;&#x6BB5;&#x4E2D;&#x7684;&#x503C;&#x7684;&#x6807;&#x51C6;&#x504F;&#x5DEE;&#x3002;&#x503C;&#x7684;&#x7C7B;&#x578B;&#x5FC5;&#x987B;&#x662F;&#x957F;&#x6574;&#x578B;&#x6216;float64&#x7C7B;&#x578B;&#x3002;</p>
+<p>&#x8BED;&#x6CD5;&#xFF1A;</p>
+<pre><code>SELECT STDDEV(&lt;field_key&gt;) FROM &lt;measurement_name&gt; [WHERE &lt;stuff&gt;] [GROUP BY &lt;stuff&gt;]
+</code></pre><p>&#x793A;&#x4F8B;&#xFF1A;</p>
+<pre><code>&gt; SELECT STDDEV(water_level) FROM h2o_feet
+name: h2o_feet
+--------------
+time                           stddev
+1970-01-01T00:00:00Z     2.279144584196145
+</code></pre><p>&#x793A;&#x4F8B;2&#xFF1A;</p>
+<pre><code>&gt; SELECT STDDEV(water_level) FROM h2o_feet WHERE time &gt;= &apos;2015-08-18T00:00:00Z&apos; and time &lt; &apos;2015-09-18T12:06:00Z&apos; GROUP BY time(1w), location
+name: h2o_feet
+tags: location = coyote_creek
+time                           stddev
+----                           ------
+2015-08-13T00:00:00Z     2.2437263080193985
+2015-08-20T00:00:00Z     2.121276150144719
+2015-08-27T00:00:00Z     3.0416122170786215
+2015-09-03T00:00:00Z     2.5348065025435207
+2015-09-10T00:00:00Z     2.584003954882673
+2015-09-17T00:00:00Z     2.2587514836274414
+
+name: h2o_feet
+tags: location = santa_monica
+time                           stddev
+----                           ------
+2015-08-13T00:00:00Z     1.11156344587553
+2015-08-20T00:00:00Z     1.0909849279082366
+2015-08-27T00:00:00Z     1.9870116180096962
+2015-09-03T00:00:00Z     1.3516778450902067
+2015-09-10T00:00:00Z     1.4960573811500588
+2015-09-17T00:00:00Z     1.075701669442093
+</code></pre>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="subject02.html" class="navigation navigation-prev " aria-label="Previous page: 选择类函数">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../Chapter05.html" class="navigation navigation-next " aria-label="Next page: InfluxDB数据管理">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"变换类函数","level":"1.4.3","depth":2,"next":{"title":"InfluxDB数据管理","level":"1.5","depth":1,"path":"Chapter05.md","ref":"Chapter05.md","articles":[]},"previous":{"title":"选择类函数","level":"1.4.2","depth":2,"path":"Chapter04/subject02.md","ref":"Chapter04/subject02.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Chapter04/subject03.md","mtime":"2019-12-12T07:47:41.944Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-12-12T08:39:37.831Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
