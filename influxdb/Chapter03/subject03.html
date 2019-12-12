@@ -410,21 +410,20 @@
 <p>&#x4E3A;&#x4E86;&#x65B9;&#x4FBF;&#xFF0C;&#x672C;&#x6587;&#x4E3B;&#x8981;&#x4F7F;&#x7528;curl&#x6765;&#x53D1;&#x8D77;http&#x8BF7;&#x6C42;&#xFF0C;&#x793A;&#x4F8B;&#x5F53;&#x4E2D;&#x4E5F;&#x662F;&#x4F7F;&#x7528;curl&#x8FD9;&#x4E2A;&#x5DE5;&#x5177;&#x6765;&#x6A21;&#x62DF;HTTP &#x8BF7;&#x6C42;&#x3002;</p>
 <p>&#x5728;&#x5B9E;&#x9645;&#x4F7F;&#x7528;&#x4E2D;&#xFF0C;&#x53EF;&#x4EE5;&#x5C06;&#x8BF7;&#x6C42;&#x5199;&#x5165;&#x4EE3;&#x7801;&#x4E2D;&#xFF0C;&#x901A;&#x8FC7;&#x5176;&#x4ED6;&#x7F16;&#x7A0B;&#x8BED;&#x8A00;&#x6765;&#x6A21;&#x62DF;HTTP&#x8BF7;&#x6C42;&#x3002;</p>
 <h2 id="influxdb&#x901A;&#x8FC7;http-api&#x64CD;&#x4F5C;&#x6570;&#x636E;&#x5E93;">InfluxDB&#x901A;&#x8FC7;HTTP API&#x64CD;&#x4F5C;&#x6570;&#x636E;&#x5E93;</h2>
-<ol>
-<li><p>&#x5EFA;&#x7ACB;&#x6570;&#x636E;&#x5E93;</p>
-<pre><code> curl -POST http://localhost:8086/query --data-urlencode &quot;q=CREATE DATABASE mydb&quot;
-</code></pre><p> &#x6267;&#x884C;&#x8FD9;&#x4E2A;&#x8BED;&#x53E5;&#x540E;&#xFF0C;&#x4F1A;&#x5728;&#x672C;&#x5730;&#x5EFA;&#x7ACB;&#x4E00;&#x4E2A;&#x540D;&#x4E3A;mydb&#x7684;&#x6570;&#x636E;&#x5E93;&#x3002;</p>
-</li>
-<li><p>&#x5220;&#x9664;&#x6570;&#x636E;&#x5E93;</p>
-<pre><code> curl -POST http://localhost:8086/query --data-urlencode &quot;q=DROP DATABASE mydb&quot;
-</code></pre><p> &#x5176;&#x5B9E;&#x4F7F;&#x7528;HTTP API&#x5C31;&#x662F;&#x5411; InfluxDB &#x63A5;&#x53E3;&#x53D1;&#x9001;&#x76F8;&#x5E94;&#x7684;POST&#x8BF7;&#x6C42;&#x3002;</p>
-<p> &#x5C06;&#x8BED;&#x53E5;&#x901A;&#x8FC7;POST&#x65B9;&#x5F0F;&#x53D1;&#x9001;&#x5230;&#x670D;&#x52A1;&#x5668;&#x3002;</p>
-</li>
-</ol>
-<h2 id="influxdb&#x901A;&#x8FC7;http-api&#x6DFB;&#x52A0;&#x6570;&#x636E;">InfluxDB&#x901A;&#x8FC7;HTTP API&#x6DFB;&#x52A0;&#x6570;&#x636E;</h2>
+<h3 id="&#x5EFA;&#x7ACB;&#x6570;&#x636E;&#x5E93;">&#x5EFA;&#x7ACB;&#x6570;&#x636E;&#x5E93;</h3>
+<pre><code>    curl -POST http://localhost:8086/query --data-urlencode &quot;q=CREATE DATABASE mydb&quot;
+
+&#x6267;&#x884C;&#x8FD9;&#x4E2A;&#x8BED;&#x53E5;&#x540E;&#xFF0C;&#x4F1A;&#x5728;&#x672C;&#x5730;&#x5EFA;&#x7ACB;&#x4E00;&#x4E2A;&#x540D;&#x4E3A;mydb&#x7684;&#x6570;&#x636E;&#x5E93;&#x3002;
+</code></pre><h3 id="&#x5220;&#x9664;&#x6570;&#x636E;&#x5E93;">&#x5220;&#x9664;&#x6570;&#x636E;&#x5E93;</h3>
+<pre><code>    curl -POST http://localhost:8086/query --data-urlencode &quot;q=DROP DATABASE mydb&quot;
+&#x5176;&#x5B9E;&#x4F7F;&#x7528;HTTP API&#x5C31;&#x662F;&#x5411; InfluxDB &#x63A5;&#x53E3;&#x53D1;&#x9001;&#x76F8;&#x5E94;&#x7684;POST&#x8BF7;&#x6C42;&#x3002;
+
+&#x5C06;&#x8BED;&#x53E5;&#x901A;&#x8FC7;POST&#x65B9;&#x5F0F;&#x53D1;&#x9001;&#x5230;&#x670D;&#x52A1;&#x5668;&#x3002;
+</code></pre><h2 id="influxdb&#x901A;&#x8FC7;http-api&#x6DFB;&#x52A0;&#x6570;&#x636E;">InfluxDB&#x901A;&#x8FC7;HTTP API&#x6DFB;&#x52A0;&#x6570;&#x636E;</h2>
 <p>InfluxDB&#x901A;&#x8FC7;HTTP API&#x6DFB;&#x52A0;&#x6570;&#x636E;&#x4E3B;&#x8981;&#x4F7F;&#x7528;&#x5982;&#x4E0B;&#x683C;&#x5F0F;&#xFF1A;</p>
 <pre><code>curl -i -XPOST &apos;http://localhost:8086/write?db=mydb&apos; --data-binary &apos;cpu_load_short,host=server01,region=us-west value=0.64 1434055562000000000&apos;
-</code></pre><p>&#x8BF4;&#x660E;&#xFF1A;db=mydb&#x662F;&#x6307;&#x4F7F;&#x7528;mydb&#x8FD9;&#x4E2A;&#x6570;&#x636E;&#x5E93;&#x3002;</p>
+</code></pre><p>&#x8BF4;&#x660E;&#xFF1A;
+db=mydb&#x662F;&#x6307;&#x4F7F;&#x7528;mydb&#x8FD9;&#x4E2A;&#x6570;&#x636E;&#x5E93;&#x3002;</p>
 <p>--data-binary&#x540E;&#x9762;&#x662F;&#x9700;&#x63D2;&#x5165;&#x6570;&#x636E;&#x3002;</p>
 <p>cpu_load_short&#x662F;&#x8868;&#x540D;&#xFF08;measurement&#xFF09;&#xFF0C;tag&#x5B57;&#x6BB5;&#x662F;host&#x548C;region&#xFF0C;&#x503C;&#x5206;&#x522B;&#x4E3A;&#xFF1A;server01&#x548C;us-west&#x3002;</p>
 <p>field key&#x5B57;&#x6BB5;&#x662F;value&#xFF0C;&#x503C;&#x4E3A;0.64&#x3002;</p>
@@ -486,7 +485,7 @@ cpu_load_short,direction=in,host=server01,region=us-west value=2.0 1422568543702
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"HTTP API写入操作","level":"1.3.4","depth":2,"next":{"title":"HTTP API查询操作","level":"1.3.5","depth":2,"path":"Chapter03/subject04.md","ref":"Chapter03/subject04.md","articles":[]},"previous":{"title":"连续查询","level":"1.3.3","depth":2,"path":"Chapter03/subject02.md","ref":"Chapter03/subject02.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Chapter03/subject03.md","mtime":"2019-12-12T07:22:50.624Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-12-12T10:11:14.949Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"HTTP API写入操作","level":"1.3.4","depth":2,"next":{"title":"HTTP API查询操作","level":"1.3.5","depth":2,"path":"Chapter03/subject04.md","ref":"Chapter03/subject04.md","articles":[]},"previous":{"title":"连续查询","level":"1.3.3","depth":2,"path":"Chapter03/subject02.md","ref":"Chapter03/subject02.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Chapter03/subject03.md","mtime":"2019-12-12T10:16:58.056Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-12-12T10:20:55.210Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

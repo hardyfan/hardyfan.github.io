@@ -6,13 +6,13 @@
 在实际使用中，可以将请求写入代码中，通过其他编程语言来模拟HTTP请求。
 
 ## InfluxDB通过HTTP API操作数据库
-1. 建立数据库
+### 建立数据库
 
 		curl -POST http://localhost:8086/query --data-urlencode "q=CREATE DATABASE mydb"
 		
 	执行这个语句后，会在本地建立一个名为mydb的数据库。
 
-2. 删除数据库
+### 删除数据库
 
 		curl -POST http://localhost:8086/query --data-urlencode "q=DROP DATABASE mydb"
 	其实使用HTTP API就是向 InfluxDB 接口发送相应的POST请求。
@@ -23,7 +23,9 @@
 InfluxDB通过HTTP API添加数据主要使用如下格式：
 
 	curl -i -XPOST 'http://localhost:8086/write?db=mydb' --data-binary 'cpu_load_short,host=server01,region=us-west value=0.64 1434055562000000000'
-说明：db=mydb是指使用mydb这个数据库。
+
+说明：
+db=mydb是指使用mydb这个数据库。
 
 --data-binary后面是需插入数据。
 

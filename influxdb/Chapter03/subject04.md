@@ -31,7 +31,7 @@
 返回值也是包含结果的json串。
 
 ## InfluxDB HTTP 查询的格式化输出
-1. 规定时间格式
+### 规定时间格式
 
 在使用HTTP查询时可以使用 epoch 参数指定输出的时间格式。可选值有 epoch=[h,m,s,ms,u,ns]。
 
@@ -41,9 +41,10 @@
 	--data-urlencode "epoch=s" --data-urlencode "q=SELECT value FROM cpu_load_short WHERE region='us-west'"
 这样会获取到以秒为单位的时间数据。
 
-2. 指定每次查询数据大小
+### 指定每次查询数据大小
 
 可以使用 chunk_size 参数来指定每次结果的大小。比如，我要结果每次返回200个点的数据，则如下所示：
 
 	curl -G 'http://localhost:8086/query' --data-urlencode "db=mydb" --data-urlencode "chunk_size=200" --data-urlencode "q=SELECT value FROM cpu_load_short WHERE region='us-west'"
+	
 这样查询结果就会返回200个点的数据。
