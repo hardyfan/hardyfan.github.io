@@ -408,117 +408,91 @@
                                 <h1 id="&#x57FA;&#x672C;&#x64CD;&#x4F5C;">&#x57FA;&#x672C;&#x64CD;&#x4F5C;</h1>
 <p>&#x5982;&#x540C;MYSQL&#x4E00;&#x6837;&#xFF0C;InfluxDB&#x63D0;&#x4F9B;&#x591A;&#x6570;&#x636E;&#x5E93;&#x652F;&#x6301;&#xFF0C;&#x5BF9;&#x6570;&#x636E;&#x5E93;&#x7684;&#x64CD;&#x4F5C;&#x4E5F;&#x4E0E;MYSQL&#x76F8;&#x540C;&#x3002;</p>
 <h2 id="&#x6570;&#x636E;&#x5E93;&#x64CD;&#x4F5C;">&#x6570;&#x636E;&#x5E93;&#x64CD;&#x4F5C;</h2>
-<ol>
-<li><p>&#x663E;&#x793A;&#x6570;&#x636E;&#x5E93;&#xFF1A;</p>
-<blockquote>
-<p>show databases</p>
-<h2 id="name-databases"> name: databases</h2>
-<p> name
- telegraf
- _internal
- lir
- testDB
- testMyDb</p>
-</blockquote>
-</li>
-<li><p>&#x65B0;&#x5EFA;&#x6570;&#x636E;&#x5E93;&#xFF1A;</p>
-<blockquote>
-<p>create database test
-show databases</p>
-<h2 id="name-databases"> name: databases</h2>
-<p> name
- telegraf
- _internal
- lir
- testDB
- testMyDb
- xk_name
- test</p>
-</blockquote>
-</li>
-<li><p>&#x5220;&#x9664;&#x6570;&#x636E;&#x5E93;</p>
-<blockquote>
-<p>drop database test
-show databases</p>
-<h2 id="name-databases"> name: databases</h2>
-<p> name
- telegraf
- _internal
- lir
- testDB
- testMyDb
- xk_name</p>
-</blockquote>
-</li>
-<li><p>&#x4F7F;&#x7528;&#x67D0;&#x4E2A;&#x6570;&#x636E;&#x5E93;</p>
-<blockquote>
-<p>use xk_name
- Using database xk_name</p>
-</blockquote>
-</li>
-</ol>
-<h2 id="&#x6570;&#x636E;&#x8868;&#x64CD;&#x4F5C;">&#x6570;&#x636E;&#x8868;&#x64CD;&#x4F5C;</h2>
+<h3 id="&#x663E;&#x793A;&#x6570;&#x636E;&#x5E93;&#xFF1A;">&#x663E;&#x793A;&#x6570;&#x636E;&#x5E93;&#xFF1A;</h3>
+<pre><code>    &gt; show databases
+    name: databases
+    ---------------
+    name
+    telegraf
+    _internal
+    lir
+    testDB
+    testMyDb
+</code></pre><h3 id="&#x65B0;&#x5EFA;&#x6570;&#x636E;&#x5E93;&#xFF1A;">&#x65B0;&#x5EFA;&#x6570;&#x636E;&#x5E93;&#xFF1A;</h3>
+<pre><code>    &gt; create database test
+    &gt; show databases
+    name: databases
+    ---------------
+    name
+    telegraf
+    _internal
+    lir
+    testDB
+    testMyDb
+    xk_name
+    test
+</code></pre><h3 id="&#x5220;&#x9664;&#x6570;&#x636E;&#x5E93;">&#x5220;&#x9664;&#x6570;&#x636E;&#x5E93;</h3>
+<pre><code>    &gt; drop database test
+    &gt; show databases
+    name: databases
+    ---------------
+    name
+    telegraf
+    _internal
+    lir
+    testDB
+    testMyDb
+    xk_name
+</code></pre><h3 id="&#x4F7F;&#x7528;&#x67D0;&#x4E2A;&#x6570;&#x636E;&#x5E93;">&#x4F7F;&#x7528;&#x67D0;&#x4E2A;&#x6570;&#x636E;&#x5E93;</h3>
+<pre><code>    &gt; use xk_name
+    Using database xk_name
+</code></pre><h2 id="&#x6570;&#x636E;&#x8868;&#x64CD;&#x4F5C;">&#x6570;&#x636E;&#x8868;&#x64CD;&#x4F5C;</h2>
 <p>&#x5728;InfluxDB&#x5F53;&#x4E2D;&#xFF0C;&#x5E76;&#x6CA1;&#x6709;&#x8868;&#xFF08;table&#xFF09;&#x8FD9;&#x4E2A;&#x6982;&#x5FF5;&#xFF0C;&#x53D6;&#x800C;&#x4EE3;&#x4E4B;&#x7684;&#x662F;MEASUREMENTS&#xFF0C;MEASUREMENTS&#x7684;&#x529F;&#x80FD;&#x4E0E;&#x4F20;&#x7EDF;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x7684;&#x8868;&#x4E00;&#x81F4;&#xFF0C;&#x56E0;&#x6B64;&#x6211;&#x4EEC;&#x4E5F;&#x53EF;&#x4EE5;&#x5C06;MEASUREMENTS&#x79F0;&#x4E3A;InfluxDB&#x4E2D;&#x7684;&#x8868;&#x3002;</p>
-<ol>
-<li><p>&#x663E;&#x793A;&#x6240;&#x6709;&#x8868;</p>
-<blockquote>
-<p>SHOW MEASUREMENTS</p>
-<h2 id="name-measurements"> name: measurements</h2>
-<p> name
- weather</p>
-</blockquote>
-</li>
-<li><p>&#x65B0;&#x5EFA;&#x8868;</p>
-</li>
-</ol>
+<h3 id="&#x663E;&#x793A;&#x6240;&#x6709;&#x8868;">&#x663E;&#x793A;&#x6240;&#x6709;&#x8868;</h3>
+<pre><code>    &gt;SHOW MEASUREMENTS
+    name: measurements
+    ------------------
+    name
+    weather
+</code></pre><h3 id="&#x65B0;&#x5EFA;&#x8868;">&#x65B0;&#x5EFA;&#x8868;</h3>
 <p>InfluxDB&#x4E2D;&#x6CA1;&#x6709;&#x663E;&#x5F0F;&#x7684;&#x65B0;&#x5EFA;&#x8868;&#x7684;&#x8BED;&#x53E5;&#xFF0C;&#x53EA;&#x80FD;&#x901A;&#x8FC7;insert&#x6570;&#x636E;&#x7684;&#x65B9;&#x5F0F;&#x6765;&#x5EFA;&#x7ACB;&#x65B0;&#x8868;&#x3002;&#x5982;&#x4E0B;&#x6240;&#x793A;&#xFF1A;</p>
-<pre><code>insert disk_free,hostname=server01 value=442221834240i 1435362189575692182
+<pre><code>    insert disk_free,hostname=server01 value=442221834240i 1435362189575692182
 </code></pre><p>&#x5176;&#x4E2D; disk_free &#x5C31;&#x662F;&#x8868;&#x540D;&#xFF0C;hostname&#x662F;&#x7D22;&#x5F15;&#xFF0C;value=xx&#x662F;&#x8BB0;&#x5F55;&#x503C;&#xFF0C;&#x8BB0;&#x5F55;&#x503C;&#x53EF;&#x4EE5;&#x6709;&#x591A;&#x4E2A;&#xFF0C;&#x6700;&#x540E;&#x662F;&#x6307;&#x5B9A;&#x7684;&#x65F6;&#x95F4;</p>
 <p>&#x6267;&#x884C;&#x540E;&#x7ED3;&#x679C;&#x5982;&#x4E0B;</p>
-<pre><code>&gt; select * from disk_free
-name: disk_free
----------------
-time            hostname    value
-1435362189575692182    server01    442221834240
-</code></pre><ol>
-<li><p>&#x5220;&#x9664;&#x8868;</p>
-<blockquote>
-<p>drop measurement disk_free
-show measurements</p>
-<h2 id="name-measurements"> name: measurements</h2>
-<p> name
- weather</p>
-</blockquote>
-</li>
-</ol>
-<h2 id="&#x6570;&#x636E;&#x64CD;&#x4F5C;">&#x6570;&#x636E;&#x64CD;&#x4F5C;</h2>
-<ol>
-<li>&#x589E;&#x52A0;&#x6570;&#x636E;</li>
-</ol>
+<pre><code>    &gt; select * from disk_free
+    name: disk_free
+    ---------------
+    time            hostname    value
+    1435362189575692182    server01    442221834240
+</code></pre><h3 id="&#x5220;&#x9664;&#x8868;">&#x5220;&#x9664;&#x8868;</h3>
+<pre><code>    &gt; drop measurement disk_free
+    &gt; show measurements
+    name: measurements
+    ------------------
+    name
+    weather
+</code></pre><h2 id="&#x6570;&#x636E;&#x64CD;&#x4F5C;">&#x6570;&#x636E;&#x64CD;&#x4F5C;</h2>
+<h3 id="&#x589E;&#x52A0;&#x6570;&#x636E;">&#x589E;&#x52A0;&#x6570;&#x636E;</h3>
 <p>&#x589E;&#x52A0;&#x6570;&#x636E;&#x91C7;&#x7528;insert&#x7684;&#x65B9;&#x5F0F;&#xFF0C;&#x8981;&#x6CE8;&#x610F;&#x7684;&#x662F; InfluxDB&#x7684;insert&#x4E2D;&#xFF0C;&#x8868;&#x540D;&#x4E0E;&#x6570;&#x636E;&#x4E4B;&#x95F4;&#x7528;&#x9017;&#x53F7;&#xFF08;,&#xFF09;&#x5206;&#x9694;&#xFF0C;tag&#x548C;field&#x4E4B;&#x95F4;&#x7528; &#x7A7A;&#x683C;&#x5206;&#x9694;&#xFF0C;&#x591A;&#x4E2A;tag&#x6216;&#x8005;&#x591A;&#x4E2A;field&#x4E4B;&#x95F4;&#x7528;&#x9017;&#x53F7;&#xFF08;,&#xFF09;&#x5206;&#x9694;&#x3002;</p>
-<pre><code>&gt; insert disk_free,hostname=server01 value=442221834240i 1435362189575692182
-&gt; select * from disk_free
-name: disk_free
----------------
-time            hostname    value
-1435362189575692182    server01    442221834240
+<pre><code>    &gt; insert disk_free,hostname=server01 value=442221834240i 1435362189575692182
+    &gt; select * from disk_free
+    name: disk_free
+    ---------------
+    time            hostname    value
+    1435362189575692182    server01    442221834240
 </code></pre><p>&#x5728;&#x8FD9;&#x6761;&#x8BED;&#x53E5;&#x4E2D;&#xFF0C;disk_free&#x662F;&#x8868;&#x540D;,hostname=server01&#x662F;tag&#xFF0C;&#x5C5E;&#x4E8E;&#x7D22;&#x5F15;&#xFF0C;value=xx&#x662F;field&#xFF0C;&#x8FD9;&#x4E2A;&#x53EF;&#x4EE5;&#x968F;&#x610F;&#x5199;&#xFF0C;&#x968F;&#x610F;&#x5B9A;&#x4E49;&#x3002;</p>
-<ol>
-<li>&#x67E5;&#x8BE2;&#x6570;&#x636E;</li>
-</ol>
+<h3 id="&#x67E5;&#x8BE2;&#x6570;&#x636E;">&#x67E5;&#x8BE2;&#x6570;&#x636E;</h3>
 <p>&#x67E5;&#x8BE2;&#x8BED;&#x53E5;&#x4E0E;SQL&#x4E00;&#x6837;&#xFF0C;&#x5728;&#x6B64;&#x4E0D;&#x518D;&#x8D58;&#x8FF0;&#x3002;</p>
-<ol>
-<li>&#x4FEE;&#x6539;&#x548C;&#x5220;&#x9664;&#x6570;&#x636E;  </li>
-</ol>
+<h3 id="&#x4FEE;&#x6539;&#x548C;&#x5220;&#x9664;&#x6570;&#x636E;">&#x4FEE;&#x6539;&#x548C;&#x5220;&#x9664;&#x6570;&#x636E;</h3>
 <p>InfluxDB&#x5C5E;&#x4E8E;&#x65F6;&#x5E8F;&#x6570;&#x636E;&#x5E93;&#xFF0C;&#x6CA1;&#x6709;&#x63D0;&#x4F9B;&#x4FEE;&#x6539;&#x548C;&#x5220;&#x9664;&#x6570;&#x636E;&#x7684;&#x65B9;&#x6CD5;&#x3002;</p>
 <p>&#x4F46;&#x662F;&#x5220;&#x9664;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;InfluxDB&#x7684;&#x6570;&#x636E;&#x4FDD;&#x5B58;&#x7B56;&#x7565;&#xFF08;Retention Policies&#xFF09;&#x6765;&#x5B9E;&#x73B0;&#xFF0C;&#x8FD9;&#x4E2A;&#x4F1A;&#x5728;&#x4EE5;&#x540E;&#x7684;&#x6587;&#x7AE0;&#x4E2D;&#x8BB2;&#x5230;&#x3002;</p>
 <h2 id="series&#x64CD;&#x4F5C;">series&#x64CD;&#x4F5C;</h2>
 <p>series&#x8868;&#x793A;&#x8FD9;&#x4E2A;&#x8868;&#x91CC;&#x9762;&#x7684;&#x6570;&#x636E;&#xFF0C;&#x53EF;&#x4EE5;&#x5728;&#x56FE;&#x8868;&#x4E0A;&#x753B;&#x6210;&#x51E0;&#x6761;&#x7EBF;&#xFF0C;series&#x4E3B;&#x8981;&#x901A;&#x8FC7;tags&#x6392;&#x5217;&#x7EC4;&#x5408;&#x7B97;&#x51FA;&#x6765;&#x3002;</p>
 <p>&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x67E5;&#x8BE2;&#x8868;&#x7684;series&#xFF0C;&#x5982;&#x4E0B;&#x6240;&#x793A;&#xFF1A;</p>
-<pre><code>&gt; show series from mem
-key
-mem,host=ResourcePool-0246-billing07
-mem,host=billing07
+<pre><code>    &gt; show series from mem
+    key
+    mem,host=ResourcePool-0246-billing07
+    mem,host=billing07
 </code></pre><h2 id="&#x754C;&#x9762;&#x64CD;&#x4F5C;">&#x754C;&#x9762;&#x64CD;&#x4F5C;</h2>
 <p>InfluxDB&#x8FD8;&#x63D0;&#x4F9B;&#x4E86;&#x7BA1;&#x7406;&#x754C;&#x9762;&#xFF0C;&#x5927;&#x5927;&#x964D;&#x4F4E;&#x4E86;&#x5165;&#x95E8;&#x96BE;&#x5EA6;&#xFF0C;&#x5728;&#x542F;&#x52A8;&#x4E86;InfluxDB&#x670D;&#x52A1;&#x4E4B;&#x540E;&#xFF0C;&#x76F4;&#x63A5;&#x8F93;&#x5165; <code>&lt;IP&gt;:8083</code> &#x5373;&#x53EF;&#x8BBF;&#x95EE;&#x754C;&#x9762;&#x3002;</p>
 
@@ -564,7 +538,7 @@ mem,host=billing07
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"基本操作","level":"1.3.1","depth":2,"next":{"title":"数据保留策略","level":"1.3.2","depth":2,"path":"Chapter03/subject05.md","ref":"Chapter03/subject05.md","articles":[]},"previous":{"title":"InfluxDB操作","level":"1.3","depth":1,"path":"Chapter03.md","ref":"Chapter03.md","articles":[{"title":"基本操作","level":"1.3.1","depth":2,"path":"Chapter03/subject01.md","ref":"Chapter03/subject01.md","articles":[]},{"title":"数据保留策略","level":"1.3.2","depth":2,"path":"Chapter03/subject05.md","ref":"Chapter03/subject05.md","articles":[]},{"title":"连续查询","level":"1.3.3","depth":2,"path":"Chapter03/subject02.md","ref":"Chapter03/subject02.md","articles":[]},{"title":"HTTP API写入操作","level":"1.3.4","depth":2,"path":"Chapter03/subject03.md","ref":"Chapter03/subject03.md","articles":[]},{"title":"HTTP API查询操作","level":"1.3.5","depth":2,"path":"Chapter03/subject04.md","ref":"Chapter03/subject04.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Chapter03/subject01.md","mtime":"2019-12-12T08:11:49.550Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-12-12T08:39:37.831Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"基本操作","level":"1.3.1","depth":2,"next":{"title":"数据保留策略","level":"1.3.2","depth":2,"path":"Chapter03/subject05.md","ref":"Chapter03/subject05.md","articles":[]},"previous":{"title":"InfluxDB操作","level":"1.3","depth":1,"path":"Chapter03.md","ref":"Chapter03.md","articles":[{"title":"基本操作","level":"1.3.1","depth":2,"path":"Chapter03/subject01.md","ref":"Chapter03/subject01.md","articles":[]},{"title":"数据保留策略","level":"1.3.2","depth":2,"path":"Chapter03/subject05.md","ref":"Chapter03/subject05.md","articles":[]},{"title":"连续查询","level":"1.3.3","depth":2,"path":"Chapter03/subject02.md","ref":"Chapter03/subject02.md","articles":[]},{"title":"HTTP API写入操作","level":"1.3.4","depth":2,"path":"Chapter03/subject03.md","ref":"Chapter03/subject03.md","articles":[]},{"title":"HTTP API查询操作","level":"1.3.5","depth":2,"path":"Chapter03/subject04.md","ref":"Chapter03/subject04.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Chapter03/subject01.md","mtime":"2019-12-12T10:09:14.349Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-12-12T10:11:14.949Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
